@@ -13,7 +13,7 @@ class MainWin(QtWidgets.QMainWindow):
   
   
   def fetch_weather(self, location):
-    api_key = 'a1ee49ea3c3fb6c222714c37786f87c7'  # Replace 'YOUR_API_KEY' with your actual API key
+    api_key = 'a1ee49ea3c3fb6c222714c37786f87c7'  # Replace 'API_KEY' with your API key
     url = f'http://api.openweathermap.org/data/2.5/weather?q={location}&appid={api_key}&units=metric'
     try:
       response = requests.get(url)
